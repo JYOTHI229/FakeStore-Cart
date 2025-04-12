@@ -33,6 +33,17 @@ A **mobile-first**, fully responsive e-commerce application built with **React.j
 - Live cart item count
 
 ---
+## 🔐 Test Login Credentials
+
+Use the following credentials to log in and test the application (provided by [Fake Store API](https://fakestoreapi.com/)):
+
+Username : johnd
+Password : m38rmF$
+
+> Note: These are public test credentials from Fake Store API, used only for demo purposes.
+
+---
+
 
 ## 🧑‍💻 Tech Stack
 

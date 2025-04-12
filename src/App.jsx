@@ -22,7 +22,7 @@ function App() {
   return (
     <Router>
      
-      {token && <Header />}
+      <Header />
 
       <Routes>
         <Route path="/login" element={<Login />} />

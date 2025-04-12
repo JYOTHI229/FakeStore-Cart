@@ -1,0 +1,120 @@
+/* Reset and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Page container */
+.home {
+    padding: 1rem 0;
+    width: 100vw;
+    max-width: 100%;
+}
+
+/* Controls container (search + categories) */
+.controls {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Search bar */
+.search-bar {
+    width: 100%;
+    max-width: 400px;
+    padding: 0.5rem;
+    margin: 1rem 0;
+    font-size: 16px;
+}
+
+/* Category buttons container */
+.categories {
+    display: flex;
+    flex-wrap: wrap;             /* Allows the buttons to wrap on small screens */
+    justify-content: center;     /* Center the buttons */
+    gap: 0.5rem;                 /* Smaller gap for mobile */
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Category button styling */
+.categories button {
+    padding: 0.5rem 1rem;
+    border: 1px solid #aaa;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+    color: black;
+    white-space: nowrap;
+    min-width: auto;
+    flex: 0 1 auto;              /* Allow buttons to shrink and grow but maintain their size */
+}
+
+/* Active category style */
+.categories .active {
+    background-color: #333;
+    color: white;
+}
+
+/* Large screens (like laptops and desktops) */
+@media (min-width: 768px) {
+    .categories {
+        flex-wrap: nowrap;        /* Prevent wrapping on larger screens */
+        justify-content: space-evenly; /* Distribute buttons evenly */
+        gap: 1rem;                /* Larger gap for larger screens */
+    }
+    
+    .categories button {
+        min-width: 120px;         /* Ensure buttons have enough width */
+    }
+}
+
+/* Product grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem 2rem;
+    width: 100%;
+}
+
+/* Individual product card */
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 0.75rem;
+    border-radius: 8px;
+    text-align: center;
+    transition: 0.2s;
+}
+
+.product-card:hover {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+    max-width: 100%;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+}
+
+.product-card h3 {
+    font-size: 14px;
+    margin: 0.5rem 0;
+}
+
+.product-card p {
+    color: #2c3e50;
+    font-weight: bold;
+}
